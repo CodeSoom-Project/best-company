@@ -6,9 +6,9 @@ describe("App", () => {
     return render(<App />);
   }
 
-  it("path가 / 일때 Home이 렌더링된다", () => {
+  it("path가 / 일때 Companys 렌더링된다", () => {
     const { container } = renderApp("/");
 
-    expect(container).toHaveTextContent("HomeUi");
+    expect(container).toHaveTextContent("지원회사");
   });
 });
