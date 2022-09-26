@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "NotoR";
+  src: url("./fonts/NotoSansKR-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "NotoM";
+  src: url("./fonts/NotoSansKR-Medium.otf") format("woff2");
+}
+@font-face {
+  font-family: "NotoB";
+  src: url("./fonts/NotoSansKR-Bold.otf") format("woff2");
+}
+@font-face {
+  font-family: "NotoL";
+  src: url("./fonts/NotoSansKR-Light.otf") format("woff2");
+}
