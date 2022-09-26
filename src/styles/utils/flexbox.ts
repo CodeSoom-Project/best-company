@@ -11,7 +11,7 @@ function optionAbbreviation(value: string) {
     around: "space-around",
     value,
   };
-  console.log(value);
+
   return flexs[value];
 }
 
