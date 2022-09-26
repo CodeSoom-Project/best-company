@@ -5,7 +5,7 @@ interface StateType {}
 const initialState: StateType = {};
 
 export const counterSlice = createSlice({
-  name: "home",
+  name: "companys",
   initialState,
   reducers: {
     // increment: (state) => {
