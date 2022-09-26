@@ -4,13 +4,14 @@ function optionAbbreviation(value: string) {
   const flexs: {
     [index: string]: string;
   } = {
+    center: "center",
     start: "flex-start",
     end: "flex-end",
     between: "space-between",
     around: "space-around",
     value,
   };
-
+  console.log(value);
   return flexs[value];
 }
 
