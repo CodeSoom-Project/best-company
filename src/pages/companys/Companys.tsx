@@ -15,6 +15,6 @@ export default function Companys() {
     });
   };
 
-  const props = { handleClickOpenAdmin };
+  const props = { adminAlert, handleClickOpenAdmin };
   return <CompanysUi {...props} />;
 }

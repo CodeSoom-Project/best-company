@@ -1,12 +1,16 @@
 import { render } from "@testing-library/react";
 
-import CompanysUi from "./CompanysUi";
+import CompanysUi, { PropType } from "./CompanysUi";
 
 describe("CompanysUi", () => {
   const handleClick = jest.fn();
 
   function renderCompanysUi() {
-    const props = {
+    const props: PropType = {
+      adminAlert: {
+        companys: false,
+        items: false,
+      },
       handleClickOpenAdmin: handleClick,
     };
 

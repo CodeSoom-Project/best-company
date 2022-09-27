@@ -1,12 +1,22 @@
 import styled from "styled-components";
+
+import CompanyAdminUi from "../../components/companys/CompanyAdminUi";
+import ItemAdminUi from "../../components/companys/ItemAdminUi";
+
 // import { VscAdd, VscRemove } from "react-icons/vsc";
 import { flexbox } from "../../styles/utils/flexbox";
 
-export interface propType {
+export interface PropType {
+  adminAlert: { companys: boolean; items: boolean };
   handleClickOpenAdmin: any;
 }
 
-export default function CompanysUi({ handleClickOpenAdmin }: propType) {
+export default function CompanysUi({
+  adminAlert,
+  handleClickOpenAdmin,
+}: PropType) {
+  const { companys, items } = adminAlert;
+
   const handleClickOpenCompanysAdmin = () => {
     handleClickOpenAdmin("companys");
   };
@@ -23,6 +33,10 @@ export default function CompanysUi({ handleClickOpenAdmin }: propType) {
           <figure onClick={handleClickOpenItemsAdmin}>항목 관리</figure>
         </div>
       </Header>
+      {/* 회사관리  */}
+      {companys && <CompanyAdminUi />}
+      {/* 항목 관리 */}
+      {items && <ItemAdminUi />}
     </Container>
   );
 }
